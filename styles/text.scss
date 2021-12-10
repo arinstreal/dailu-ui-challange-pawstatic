@@ -1,0 +1,52 @@
+@import url(http://fonts.googleapis.com/css?family=Henriette+Bold:400italic,700italic,400,700);
+@import url(http://fonts.googleapis.com/css?family=Basic+Sans+Light:400italic,700italic,400,700);
+@import url(http://fonts.googleapis.com/css?family=Basic+Sans+Bold:400italic,700italic,400,700);
+
+$size-12: 0.75rem;
+$size-20: 1.25rem;
+$size-24: 1.5rem;
+$size-27: 1.688rem;
+$size-36: 2.25rem;
+$size-48: 3rem;
+$size-54: 3.375rem;
+
+$h1-size: 1.688rem;
+
+body {
+  font-size: $size-24;
+  font-weight: lighter;
+  font-family: 'Basic Sans Light', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Henriette', sans-serif;
+  font-weight: bold;
+}
+
+.h1 {
+  font-size: $size-27;
+}
+
+h2 {
+  font-size: $size-48;
+}
+
+h3 {
+  font-size: $size-36;
+}
+
+h4 {
+  font-size: $size-24
+}
+
+span {
+  font-family: 'Basic Sans Regular', sans-serif;
+  font-size: $size-20;
+}
+
+label {
+  font-size: $size-12;
+  font-family: 'Basic Sans Bold', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
