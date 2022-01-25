@@ -1,3 +1,6 @@
+@import "variables";
+@import "text";
+@import "buttons";
 html,
 body {
   padding: 0;
@@ -13,4 +16,24 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.layout-two-elements {
+  display: flex;
+  & > :first-child {
+    background-color: var(--dark-blue);
+    width: 40%;
+  }
+  & > :last-child {
+    background-color: var(--ligt-pink);
+    width: 60%;
+  }
+}
+
+.d-flex {
+  display: flex;
+  gap: 8px;
+  & > * {
+    flex-grow: 1;
+  }
 }

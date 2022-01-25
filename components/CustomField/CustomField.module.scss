@@ -1,0 +1,36 @@
+.customField {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+
+  &.error {
+    .errorMessage {
+      color: var(--red);
+    }
+
+    input {
+      border-color: var(--red);
+    }
+  }
+
+  input {
+    padding: 7px 8px;
+    border: 1px solid var(--dark-pink);
+    font-size: var(--size-10);
+
+    &::placeholder {
+      color: var(--pink);
+    }
+
+    &:focus {
+      border-color: var(--dark-blue);
+    }
+  }
+
+  label {
+    font-size: var(--size-20);
+    color: var(--gray);
+    font-family: 'Basic Sans Regular', sans-serif;
+    padding-bottom: 8px;
+  }
+}

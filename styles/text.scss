@@ -1,52 +1,51 @@
 @import url(http://fonts.googleapis.com/css?family=Henriette+Bold:400italic,700italic,400,700);
 @import url(http://fonts.googleapis.com/css?family=Basic+Sans+Light:400italic,700italic,400,700);
-@import url(http://fonts.googleapis.com/css?family=Basic+Sans+Bold:400italic,700italic,400,700);
+@import url(//db.onlinewebfonts.com/c/ce49b93f4549130d36f0a3453a6332ff?family=BasicSans-Bold);
 
-$size-12: 0.75rem;
-$size-20: 1.25rem;
-$size-24: 1.5rem;
-$size-27: 1.688rem;
-$size-36: 2.25rem;
-$size-48: 3rem;
-$size-54: 3.375rem;
-
-$h1-size: 1.688rem;
 
 body {
-  font-size: $size-24;
+  font-size: var(--size-24);
   font-weight: lighter;
   font-family: 'Basic Sans Light', sans-serif;
+  height: 100vh;
+
+  & > div {
+    &, & > div {
+      height: 100%;
+    }
+  }
 }
 
 h1, h2, h3, h4 {
   font-family: 'Henriette', sans-serif;
   font-weight: bold;
+  color: var(--dark-blue);
 }
 
 .h1 {
-  font-size: $size-27;
+  font-size: var(--size-54);
 }
 
 h2 {
-  font-size: $size-48;
+  font-size: var(--size-48);
 }
 
 h3 {
-  font-size: $size-36;
+  font-size: var(--size-36);
 }
 
 h4 {
-  font-size: $size-24
+  font-size: var(--size-24);
 }
 
 span {
   font-family: 'Basic Sans Regular', sans-serif;
-  font-size: $size-20;
+  font-size: var(--size-20);
 }
 
-label {
-  font-size: $size-12;
-  font-family: 'Basic Sans Bold', sans-serif;
+.label {
+  font-size: var(--size-12);
+  font-family: 'BasicSans Bold', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
 }
